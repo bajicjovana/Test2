@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Osobas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Ime</th>
+      <th>Prezime</th>
+      <th>Godiste</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @osobas.each do |osoba| %>
+      <tr>
+        <td><%= osoba.ime %></td>
+        <td><%= osoba.prezime %></td>
+        <td><%= osoba.godiste %></td>
+        <td><%= link_to 'Show', osoba %></td>
+        <td><%= link_to 'Edit', edit_osoba_path(osoba) %></td>
+        <td><%= link_to 'Destroy', osoba, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Osoba', new_osoba_path %>
+<button type="button" class="btn btn-dark">Start</button>

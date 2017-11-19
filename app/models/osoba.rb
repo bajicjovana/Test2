@@ -1,0 +1,2 @@
+class Osoba < ApplicationRecord
+end
