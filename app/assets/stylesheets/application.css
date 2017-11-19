@@ -14,5 +14,6 @@
  *= require_self
  */
  body { padding-top: 100px; 
-background-color: #b3d9ff;}
+background-color: #b3d9ff;
+ background-image: url("Panorama.jpg");
 
